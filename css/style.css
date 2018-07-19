@@ -120,6 +120,21 @@ a {
     line-height: 26px;
 }
 
+#main-navigation a.current,
+#main-navigation a.current:hover,
+#main-navigation a.current:active {
+    color: rgb(118, 99, 87);
+}
+
+
+#main-navigation a:hover {
+    color: rgb(129, 179, 210);
+}
+
+#main-navigation a:active {
+    color: rgba(0, 0, 0, 0.2);
+}
+
 #main-navigation .logo {
     position: absolute;
     top: 0px;
@@ -142,6 +157,10 @@ a {
  * ========================================================================== */
 
 /* Main Image */
+
+/* #main {
+    padding-bottom: 120px;
+} */
 
 #main .welcome-image {
     width: 100%;
@@ -308,15 +327,40 @@ a {
 /* Hotel Search */
 
 .hotel-search {
-    min-height: 765px;
+    min-height: 883px;
 }
 
 .hotel-search-content {
     min-height: 293px;
+    padding-top: 45px;
+}
+
+.hotel-search-content .question {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 9px 0 28px 0;
+}
+
+.hotel-search-content p:not(.question) {
+    margin: 4px 0;
+}
+
+.hotel-search-content .form-title-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 49px;
+    height: 86px;
+    width: 570px;
+    background-color: rgb(118, 99, 87);
+    line-height: 86px;
+    font-size: 21px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 
 .hotel-search .map-img {
-    height: 472px;
+    height: 593px;
     background: rgb(203, 221, 169) url(../img/map.jpg) no-repeat 0 0;
 }
 
@@ -327,7 +371,93 @@ a {
 /* END Hotel Search */
 
 
+/* ============= /END Main ============================================================= */
+
 
 /* ==========================================================================
  *  Footer
  * ========================================================================== */
+
+#main-footer {
+    min-height: 120px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: -120px;
+    font-size: 0;
+}
+
+.footer-hashtag,
+.footer-social,
+.footer-developed {
+    float: left;
+    width: 33.33%;
+}
+
+.footer-hashtag {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 27px 0;
+}
+
+.footer-social {
+    text-align: center;
+    padding: 36px 0;
+}
+
+.footer-social .social-button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 46px;
+    height: 48px;
+    background-color: rgb(129, 179, 210);
+    margin: 0 3px;
+}
+
+.footer-social .social-tw {
+    background: rgb(129, 179, 210) url("../img/icon-twitter.png") no-repeat 50% 50%;
+}
+
+.footer-social .social-fb {
+    background: rgb(129, 179, 210) url("../img/icon-facebook.png") no-repeat 50% 50%;
+}
+
+.footer-social .social-ytube {
+    background: rgb(129, 179, 210) url("../img/icon-youtube.png") no-repeat 50% 50%;
+}
+
+.social-button:hover {
+    background-color: rgba(102, 158, 192, 1)
+}
+
+.social-button:active {
+    background-color: rgba(84, 150, 205, 0.6)
+}
+
+.footer-developed p:not(a) {
+    font-size: 14px;
+    padding-top: 21px;
+}
+
+.footer-developed p,
+.footer-developed a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-developed a {
+    width: 115px;
+    height: 41px;
+    background: url("../img/logo_academy.png") no-repeat 50% 50%;
+    font-size: 0;
+}
+
+.footer-developed a:hover {
+    background: url("../img/logo_academy-hover.png") no-repeat 50% 50%;
+}
+
+.footer-developed a:active {
+    background: url("../img/logo_academy-active.png") no-repeat 50% 50%;
+}
+
+
+/* ============= /END Footer ============================================================= */
+
