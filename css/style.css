@@ -373,12 +373,14 @@ a {
 
 .hotel-search .map-img {
     position: relative;
-    height: 593px;
-    background: rgb(203, 221, 169) url(../img/map.jpg) no-repeat 0 0;
+    /* height: 593px; */
+    height: 473px;
+    background: rgb(203, 221, 169) url("../img/map.jpg") no-repeat 0 0;
+
 }
 
 .hotel-search-form {
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 50%;
@@ -388,6 +390,11 @@ a {
     padding: 56px 52px;
     background-color: rgb(255, 255, 255);
     font-weight: bold;
+    box-shadow: 0 30px 50px rgba(65, 42, 42, 0.7);
+}
+
+.hotel-search-form-show {
+    display: block;
 }
 
 .hotel-search-form p {
@@ -410,6 +417,15 @@ a {
     width: 346px;
     padding: 0 40px 0 20px;
     position: relative;
+}
+
+.hotel-search-form input[type="date"]:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.hotel-search-form input[type="date"]:focus {
+    background-color: none;
+    border: 1px solid rgb(235, 235, 235);
 }
 
 .hotel-search-form .label-date-in::after,
@@ -516,7 +532,6 @@ a {
 .hotel-description .button-info:active {
     background-color: rgb(84, 150, 189);
     color: rgba(255, 255, 255, 0.5);
-
 }
 
 
@@ -531,8 +546,7 @@ a {
     padding: 27px 73px 8px 73px;
 }
 
-.hotel-selection-left,
-.hotel-selection-right {
+.hotel-selection-left {
     float: left;
     width: 50%;
     color: rgb(255, 255, 255);
@@ -611,6 +625,114 @@ a {
     font-size: 14px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.hotel-selection-right {
+    float: right;
+    width: 328px;
+    color: rgb(255, 255, 255);
+    padding-left: 17px;
+}
+
+.range-filter {
+    width: 319px;
+    font-size: 0;
+    margin-bottom: 32px;
+}
+
+.range-filter h4 {
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0;
+    margin-bottom: 13px;
+    text-align: left;
+}
+
+.range-filter-controls {
+    width: 307px;
+    margin-bottom: 10px;
+    padding: 19px 0 0px 15px;
+    position: relative;
+}
+
+.range-filter-controls .scale {
+    height: 2px;
+    background: rgb(132, 124, 124);
+    
+}
+
+.range-filter-controls .scale .bar {
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin-left: 0px;
+    margin-right: 53px;
+}
+
+.range-filter-controls .toggle {
+    box-sizing: content-box;
+    height: 4px;
+    width: 4px;
+    border: 8px solid rgb(255, 255, 255);
+    background: rgb(171, 171, 171);
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 rgba(88, 83, 83, 0.5);
+    cursor: pointer;
+}
+
+.range-filter-controls .toggle:hover {
+    border: 10px solid rgb(255, 255, 255);
+}
+
+.range-filter-controls .toggle-min {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.range-filter-controls .toggle-max {
+    position: absolute;
+    top: 10px;
+    right: 39px;
+}
+
+.range-filter .price-controls {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 -5px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    position: relative;
+}
+
+.range-filter .price-controls::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    top: 3px;
+    left: 50%;
+    margin-left: -1px;
+    background-color: rgb(255, 255, 255);
+}
+
+.range-filter .price-controls input[type="text"] {
+    text-align-last: left;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: inherit;
+    margin-left: 3px;
+    background: none;
+
+}
+
+.range-filter .min-price-label {
+    margin-right: 80px;
+    margin-left: 30px;
 }
 
 .hotel-selection button:hover {
