@@ -379,6 +379,40 @@ a {
 
 }
 
+.modal-content-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 23px;
+    height: 23px;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+    content: "";
+    width: 4px;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+}
+
+.modal-content-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+    transform: rotate(-45deg);
+}
+
+
 .hotel-search-form {
     display: none;
     position: absolute;
