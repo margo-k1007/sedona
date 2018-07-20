@@ -976,7 +976,9 @@ a {
     text-align: center;
 }
 
-#rating-value {
+#rating-value-1,
+#rating-value-2,
+#rating-value-3 {
     border: none;
     width: 25px;
     background: none;
