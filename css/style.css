@@ -370,6 +370,152 @@ a {
 
 /* END Hotel Search */
 
+/* Inner Page Hotel */
+
+.hotel-selection {
+    min-height: 218px;
+    background: url("../img/img-filter-background1200-562.jpg") no-repeat 0 0;
+}
+
+.hotel-selection-left,
+.hotel-selection-right {
+    float: left;
+    width: 50%;
+    color: rgb(255, 255, 255);
+}
+
+.hotel-selection-left .infrastructure,
+.hotel-selection-left .house-type {
+    float: left;
+    width: 50%;
+    border: none;
+    margin: 0;
+    text-align: left;
+    padding-left: 73px;
+}
+
+.hotel-selection-left legend {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hotel-content-row {
+    min-height: 89px;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 73px;
+    width: 60%;
+}
+
+.hotel-content-row .result {
+    font-size: 21px;
+    font-weight: bold;
+    float: left;
+    width: 160px;
+    padding-top: 10px;
+}
+
+#submit-result {
+    border: none;
+    width: 50px;
+    background: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.hotel-sort-row {
+    float: left;
+    width: 390px;
+}
+
+.hotel-sort-row h4 {
+    font-size: 12px;
+    line-height: 18px;
+    float: left;
+    width: 80px;
+    padding: 24px 0 0 4px;
+}
+
+.hotel-sort-row ul {
+    padding: 0;
+    float: left;
+    width: 300px;
+    padding-top: 26px;
+    padding-left: 30px;
+}
+
+.hotel-sort-row li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    list-style: none;
+    padding: 0 8px;    
+}
+
+.hotel-sort-row li a {
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(202, 202, 202);
+    text-decoration:  rgb(129, 179, 210) dotted underline;
+}
+
+.hotel-sort-row li a:hover {
+    color: rgb(129, 179, 210);
+}
+
+.hotel-sort-row li a:active {
+    color: rgb(0, 0, 0);
+    text-decoration:  none;
+}
+
+.hotel-sort-row li a.current-sort {
+    color: rgb(129, 179, 210);
+    text-decoration:  none;
+}
+
+.hotel-sort-row .sort-ascending,
+.hotel-sort-row .sort-descendingly {
+    font-size: 0;
+    position: relative;
+}
+
+.hotel-sort-row .sort-ascending:before,
+.hotel-sort-row .sort-descendingly:before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: -15px;
+    left: 530px;
+    background: url("../img/icon-up-dir.png") no-repeat 50% 50%;
+
+}
+
+.hotel-sort-row .sort-descendingly:before {
+    transform: rotate(180deg);
+}
+
+.hotel-sort-row .current .sort-ascending:before {
+    background: url("../img/icon-down-dir.png") no-repeat 50% 50%;
+    transform: rotate(180deg);
+}
+
+.hotel-sort-row .current .sort-descendingly:before {
+    background: url("../img/icon-down-dir.png") no-repeat 50% 50%;
+}
+
+.hotel-item-card {
+    width: 100%;
+    padding: 30px 73px;
+    border-top: 1px solid rgb(229, 229, 229);
+    min-height: 151px;
+
+}
+
+
+
+/* END Inner Page Hotel */
+
 
 /* ============= /END Main ============================================================= */
 

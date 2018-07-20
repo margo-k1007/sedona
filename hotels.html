@@ -29,27 +29,31 @@
 
             <section class="hotel-selection">
 
-                <form action="#" class="hotel-selection-form" method="GET"> 
+                <form action="#" class="hotel-selection-form clearfix" method="GET"> 
 
-                    <fieldset class="infrastructure">
-                        <legend>Инфраструктура</legend>
-                            <p><input type="checkbox" name="swimming-pool" id="swimming-pool"><label for="swimming-pool">Бассейн</label></p>
-                            <p><input type="checkbox" name="parking-place" id="parking-place"><label for="parking-place">Парковка</label></p>
-                            <p><input type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi">Wi-Fi</label></p>
-                    </fieldset><!--infrastructure-->
-
-                    <fieldset class="house-type">
-                        <legend>Тип жилья</legend>
-                            <p><input type="checkbox" name="hotel" id="hotel"><label for="hotel">Гостиница</label></p>
-                            <p><input type="checkbox" name="motel" id="motel"><label for="">Мотель</label></p>
-                            <p><input type="checkbox" name="apartaments" id="apartaments"><label for="apartaments">Апартаменты</label></p>
-                    </fieldset><!--house-type-->
-
-                    <div class="toggle">
-
+                    <div class="hotel-selection-left clearfix">
+                        <fieldset class="infrastructure">
+                            <legend>Инфраструктура</legend>
+                                <p><input type="checkbox" name="swimming-pool" id="swimming-pool"><label for="swimming-pool">Бассейн</label></p>
+                                <p><input type="checkbox" name="parking-place" id="parking-place"><label for="parking-place">Парковка</label></p>
+                                <p><input type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi">Wi-Fi</label></p>
+                        </fieldset><!--infrastructure-->
+                        
+                        <fieldset class="house-type">
+                            <legend>Тип жилья</legend>
+                                <p><input type="checkbox" name="hotel" id="hotel"><label for="hotel">Гостиница</label></p>
+                                <p><input type="checkbox" name="motel" id="motel"><label for="">Мотель</label></p>
+                                <p><input type="checkbox" name="apartaments" id="apartaments"><label for="apartaments">Апартаменты</label></p>
+                        </fieldset><!--house-type-->
                     </div>
 
-                    <button type="submit">Показать</button>
+                    <div class="hotel-selection-right">
+                        <div class="toggle">
+                        
+                        </div>
+                        
+                        <button type="submit">Показать</button>
+                    </div>
 
                 </form><!--hotel-selection-form-->
 
@@ -57,18 +61,18 @@
 
             <section class="hotel-content">
                 <h4 class="visuallyhidden">Результаты поиска отелей</h4>
-                <div class="hotel-content-row">
+                <div class="hotel-content-row clearfix">
 
-                    <p class="result">Найдено: <input type="text" name="submit-result" id="submit-result" value="3"></p>
+                    <p class="result">Найдено: <input type="text" name="submit-result" id="submit-result" value="3" disabled></p>
 
-                    <div class="hotel-sort-row">
+                    <div class="hotel-sort-row clearfix">
                         <h4>Сортировка:</h4>
                         <ul>
-                            <li><a href="#">По цене</a></li>
+                            <li><a class="current-sort" href="#">По цене</a></li>
                             <li><a href="#">По типу</a></li>
                             <li><a href="#">По рейтингу</a></li>
-                            <li><a href="#">По возростанию</a></li>
-                            <li><a href="#">По убыванию</a></li>
+                            <li class="current"><a href="#" class="sort-ascending">По возростанию</a></li>
+                            <li><a href="#" class="sort-descendingly">По убыванию</a></li>
                         </ul>
 
                     </div><!--hotel-sort-row-->
@@ -82,7 +86,7 @@
                     </div>
 
                     <div class="hotel-description">
-                        <h3>Amara Resort & Spa</h3>
+                        <h3>Amara Resort &#x26 Spa</h3>
                         <p class="hotel-type">Гостиница</p>
                         <p class="price">от 4000 Р.</p>
                         <a href="#" class="button">Подробнее</a>
