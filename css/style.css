@@ -359,6 +359,18 @@ a {
     color: rgb(255, 255, 255);
 }
 
+.hotel-search-content .form-title-button:hover,
+.hotel-description .button-book:hover {
+    background-color: rgb(96, 78, 57);
+}
+
+.hotel-search-content .form-title-button:active,
+.hotel-description .button-book:active {
+    background-color: rgb(80, 62, 51);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
 .hotel-search .map-img {
     height: 593px;
     background: rgb(203, 221, 169) url(../img/map.jpg) no-repeat 0 0;
@@ -399,12 +411,17 @@ a {
     font-weight: bold;
 }
 
+.hotel-content {
+    padding-bottom: 121px;
+}
+
 .hotel-content-row {
-    min-height: 89px;
+    min-height: 87px;
     font-size: 14px;
     text-align: left;
     padding-left: 73px;
     width: 60%;
+    border-bottom: 1px solid rgb(229, 229, 229);
 }
 
 .hotel-content-row .result {
@@ -507,11 +524,127 @@ a {
 .hotel-item-card {
     width: 100%;
     padding: 30px 73px;
-    border-top: 1px solid rgb(229, 229, 229);
-    min-height: 151px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    height: 151px;
+    text-align: left;
+}
+
+.hotel-item-card .hotel-image {
+    float: left;
+    width: 135px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.hotel-item-card .hotel-description {
+    float: left;
+    width: 260px;
+    margin-left: 30px;
+}
+
+.hotel-description h3 {
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+.hotel-description .hotel-type,
+.hotel-description .price {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 14px 0;
+    margin: 0;
+}
+
+.hotel-description .price {
+    margin-left: 40px;
+}
+
+.hotel-description .hotel-buttons {
+    font-size: 0px;
+}
+
+.hotel-description .button-info,
+.hotel-description .button-book {
+    height: 27px;
+    min-width: 110px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px;
+    color:  rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+.hotel-description .button-info {
+    width: 110px;
+    background-color: rgb(129, 179, 210);
+    margin-right: 6px;
+}
+
+.hotel-description .button-info:hover {
+    background-color: rgb(102, 158, 192);
+}
+
+.hotel-description .button-info:active {
+    background-color: rgb(84, 150, 189);
+    color: rgba(255, 255, 255, 0.5);
 
 }
 
+.hotel-description .button-book {
+    width: 142px;
+    background-color: rgb(118, 99, 87);
+}
+
+.hotel-item-card .hotel-rating {
+    float: right;
+    width: 130px;
+    text-align: right;
+}
+
+.hotel-rating .rating {
+    min-width: 111px;
+    padding: 0 12px;
+    height: 26px;
+    line-height: 26px;
+    color: rgb(102, 102, 102);
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+}
+
+#rating-value {
+    border: none;
+    width: 25px;
+    background: none;
+    color: inherit;
+}
+
+.hotel-rating .stars {
+    width: 111px;
+    margin-bottom: 48px;
+}
+
+.hotel-rating .stars ul {
+    padding: 0;
+    font-size: 0;
+}
+
+.hotel-rating .stars ul li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hotel-rating .stars ul a {
+    display: block;
+    width: 18px;
+    height: 17px;
+    background: url("../img/icon-star.png") no-repeat 50% 50%;
+}
 
 
 /* END Inner Page Hotel */
